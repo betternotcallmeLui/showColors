@@ -1,0 +1,49 @@
+.input-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+[type="file"] {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+
+[type="file"]+label {
+    background: #F2AEC3;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    outline: none;
+    padding: 14px 50px;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+
+    &:hover {
+        background-color: darken(#f15d22, 10%);
+    }
+
+    &.btn-1 {
+        background-color: #F8B4C9;
+        transition: none;
+
+        &:hover {
+            top: 2px;
+        }
+    }
+}
+
+.color-container {
+    &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+}
